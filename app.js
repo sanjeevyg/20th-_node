@@ -35,13 +35,4 @@ app.post("/dogs", (request, response)=> {
         .then(dog => response.send({dog}))
 })
 
-// app.post('/dogs', (request, response) => {
-//     const dog = request.body
-//     database('dogs')
-//         .insert(dog)
-//         .returning('*')
-//         .then(dog => {
-//             response.json({ dog })
-//         })
-// })
 
