@@ -7,7 +7,7 @@ const connection = require('./knexfile.js')['development']
 
 const database = knex(connection)
 
-const port = 4000
+const port = 9000
 
 app.use(express.json())
 
