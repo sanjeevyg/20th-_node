@@ -29,10 +29,11 @@ app.get('/dogs/:id', (request, response) => {
 
 app.post("/dogs", (request, response)=> {
     const dog = request.body
+    console.log(request.params)
     database("dogs")
         .insert(dog)
         .returning("*")
-        .then(dog => response.send({dog}))
+        .then(dog => response.send(dog))
 })
 
 
